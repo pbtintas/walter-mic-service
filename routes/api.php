@@ -8,5 +8,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['namespace' => 'Api'], function () {
     Route::resource('categories', 'CategoryController');
+    Route::resource('genres', 'GenreController');
 });
 
